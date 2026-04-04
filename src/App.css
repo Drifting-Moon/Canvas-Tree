@@ -1,0 +1,125 @@
+#root {
+  width: 100%;
+  height: 100vh;
+}
+
+.click-count {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background-color: #454545;
+  align-items: center;
+  font-size: 40px;
+  overflow: hidden;
+  cursor: crosshair;
+  /* Cures the draggable page and extra space */
+}
+
+.click-h1 {
+  color: white;
+  font-size: 70px;
+}
+
+.clear-btn {
+  /* Edit these values to change the button's size and look! */
+  font-size: 80px;
+  /* Makes the text inside bigger/smaller */
+  padding: 10px 30px;
+  /* Adds space inside the button (top/bottom left/right) */
+  background-color: transparent;
+  color: white;
+  /* Text color */
+  border: 3px solid white;
+  /* Border thickness and color */
+  border-radius: 15px;
+  /* Rounds the corners */
+  cursor: pointer;
+  /* Changes mouse to a pointer hand when hovering */
+  transition: all 0.2s ease;
+  /* Makes hover effects smooth */
+}
+
+.clear-btn:hover {
+  background-color: white;
+  /* Background color when you hover over it */
+  color: black;
+  /* Text color when you hover */
+}
+
+/* For Firefox */
+.sticky-note {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+.note {
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s;
+}
+
+.note:hover {
+  box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* The Title Input */
+.sticky-note-title {
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: text;
+  font-family: inherit;
+}
+
+/* The Textarea Content */
+.sticky-note {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 10px !important;
+}
+
+
+/* ---------------------  */
+
+/* src/App.css */
+
+
+
+/* The sticky note container */
+.note {
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s;
+}
+
+.note:hover {
+  box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* The Title Input */
+.sticky-note-title {
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: text;
+  font-family: inherit;
+}
+
+/* The Textarea Content */
+.sticky-note {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 10px !important;
+}
