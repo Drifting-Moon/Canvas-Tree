@@ -9,12 +9,17 @@
   display: flex;
   position: relative;
   justify-content: center;
-  background-color: #4e4c4c;
+  background:
+    radial-gradient(circle at 10% 10%, rgba(58, 58, 255, 0.03), transparent 30%),
+    radial-gradient(circle at 90% 90%, rgba(255, 58, 255, 0.03), transparent 30%),
+    linear-gradient(#121214 1px, transparent 1px),
+    linear-gradient(90deg, #121214 1px, transparent 1px),
+    #0a0a0b;
+  background-size: 100% 100%, 100% 100%, 40px 40px, 40px 40px;
   align-items: center;
   font-size: 40px;
   overflow: hidden;
   cursor: crosshair;
-  /* Cures the draggable page and extra space */
 }
 
 .click-h1 {
@@ -23,29 +28,31 @@
 }
 
 .clear-btn {
-  /* Edit these values to change the button's size and look! */
-  font-size: 80px;
-  /* Makes the text inside bigger/smaller */
-  padding: 10px 30px;
-  /* Adds space inside the button (top/bottom left/right) */
-  background-color: transparent;
-  color: white;
-  /* Text color */
-  border: 3px solid white;
-  /* Border thickness and color */
-  border-radius: 15px;
-  /* Rounds the corners */
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 60px;
+  padding: 15px 40px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
   cursor: pointer;
-  /* Changes mouse to a pointer hand when hovering */
-  transition: all 0.2s ease;
-  /* Makes hover effects smooth */
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clear-btn:hover {
-  background-color: white;
-  /* Background color when you hover over it */
-  color: black;
-  /* Text color when you hover */
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.2),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 /* For Firefox */
