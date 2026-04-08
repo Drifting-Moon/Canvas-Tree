@@ -22,3 +22,14 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+# Security
+.env
+.env.*
+!.env.example
+
+# Build/Cache
+*.tsbuildinfo
+.eslintcache
+
